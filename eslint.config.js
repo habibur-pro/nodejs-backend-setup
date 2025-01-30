@@ -1,16 +1,16 @@
-import tsParser from "@typescript-eslint/parser";
-import tsPlugin from "@typescript-eslint/eslint-plugin";
+import tsParser from '@typescript-eslint/parser';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
 
 export default [
   {
-    files: ["**/*.ts", "**/*.tsx"], // Apply to TypeScript files
+    files: ['**/*.ts', '**/*.tsx'], // Apply to TypeScript files
     languageOptions: {
       parser: tsParser,
       ecmaVersion: 2018,
-      sourceType: "module",
+      sourceType: 'module',
     },
     plugins: {
-      "@typescript-eslint": tsPlugin,
+      '@typescript-eslint': tsPlugin,
     },
     rules: {
       // Add your custom rules here
